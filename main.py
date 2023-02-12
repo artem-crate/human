@@ -1,4 +1,3 @@
-
 import random
 class Human:
     def __init__(self, name="Human", job=None, home=None, car=None):
@@ -207,3 +206,9 @@ nick = Human(name="Nick")
 for day in range(1,800):
     if nick.live(day) == False:
         break
+
+class Pets:
+    def __init__(self, pets):
+        self.job=random.choice(list(pets))
+        self.salary=pest[self.pest]["salary"]
+        self.gladness_less=job_list[self.job]["gladness_less"]
