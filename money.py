@@ -41,7 +41,7 @@ class Student:
         print(f"{day:=^50}")
         if live_cube == 1:
 
-        live_cube = random.randint(1, 3)
+        live_cube = random.randint(1,3)
             self.to_study()
             self.to_slepp()
 
@@ -50,16 +50,17 @@ class Student:
             self.to_chill()
         self.end_of_day()
 
-def money(self):
-    if self.progress < -0.5:
-        print("Cast out...")
-        self.alive = False
-    elif self.gladness > 2: #if the student is satisfied, he can buy something for himself in the store
-        print("Need to buy something")
-        self.alive = False
-    elif self.progress > 5: #if a student has earned money somewhere, he can save it for a car
-        print("Save money for a car")
-        self.alive = False
+class money:
+
+    def work(self):
+        print("Need to earn some money") #if our student has -2 moods, then he goes to earn money, so that later he can buy something for himself and cheer up
+        self.gladness -= 2
+        self.progress -= 1
+
+    def shopping(self):
+        print("I have money, I'll go buy myself something") #when our student is in a good mood and progress, he can go and buy something for himself in the store
+        self.gladness += 2
+        self.progress += 1
 
 nick = Student(name="Nick")
 for day in range(365):
