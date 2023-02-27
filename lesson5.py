@@ -62,3 +62,4 @@ class Tablet(Joystick, Laptop):
         print(self.memory)
 iphone = Tablet(model ="Last")
 iphone.print_info()
+
