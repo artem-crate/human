@@ -210,6 +210,6 @@ for day in range(1,800):
 class Pet:
     def init(self, pet_type):
         self.type = random.choice(list(brand_list))
-        self.energy = brand_list[self.brand]print["energy"]
-        self.strength = brand_list[self.brand]print["strength"]
-        self.fatigue = brand_list[self.brand]print["fatigue"]
+        self.energy = brand_list[self.brand]["energy"]
+        self.strength = brand_list[self.brand]["strength"]
+        self.fatigue = brand_list[self.brand]["fatigue"]
