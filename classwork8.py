@@ -16,3 +16,10 @@ except Exception:
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
+import urllib.request
+import requests
+
+opener = urllib.request.build_opener()
+response = opener.open("https://bank.gov.ua/")
+print(response.read())

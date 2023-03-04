@@ -7,4 +7,3 @@ class Helper:
 helper = Helper("homework")
 print(helper("cleaning"))
 print(helper("eating"))
-

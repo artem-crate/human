@@ -21,8 +21,7 @@ for parse_elem_1 in response_parse:
 bitcoin_exchange_rate = res_parse_list[0]
 print(bitcoin_exchange_rate)
 
-
-from bs4 import BeautifulSoupimport
+  from bs4 import BeautifulSoupimport
 requestsresponse = requests.get("https://bank.gov.ua/")
 
 if response.status_code == 200:
